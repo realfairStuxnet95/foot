@@ -1,0 +1,34 @@
+$(document).ready(function(){
+	$("#frm_register").submit(function(e){
+		e.preventDefault();
+           $.ajax({  
+                url:"register_member",  
+                method:"POST",  
+                data:new FormData(this),  
+                contentType:false,  
+                processData:false,  
+                success:function(data)  
+                { 
+                	alert(data);        
+                }  
+           });
+	});
+    $("#frm_login").submit(function(e){
+        e.preventDefault();
+           $.ajax({  
+                url:"login_request",  
+                method:"POST",  
+                data:new FormData(this),  
+                contentType:false,  
+                processData:false,  
+                success:function(data)  
+                { 
+                    if(data.match("200")){
+                        window.location="index";
+                    }else{
+                        alert(data);
+                    }       
+                }  
+           });
+    });
+});

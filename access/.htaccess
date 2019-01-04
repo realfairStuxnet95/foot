@@ -1,0 +1,14 @@
+# Turn Rewrite Engine On
+RewriteEngine on
+# Rewrite for login script
+RewriteRule ^access$ App/Views/Login/access_system.php [NC,L]
+RewriteRule ^log_user$ App/Views/Login/login_request.php [NC,L]
+RewriteRule ^logout$ App/Views/Login/log_user_out.php [NC,L]
+RewriteRule ^dashboard$ index.php [NC,L]
+
+RewriteRule ^save_data$ App/Views/Admin/save_data.php [NC,L]
+RewriteRule ^save_banner$ App/Views/Admin/upload_banner.php [NC,L]
+RewriteRule ^add_article$ create_article.php [NC,L]
+RewriteRule ^save_poster$ App/Views/Article/upload_poster.php [NC,L]
+RewriteRule ^save_document$ App/Views/Article/upload_documents.php [NC,L]
+RewriteRule ^get_documents$ App/Views/Article/get_documents.php [NC,L]
