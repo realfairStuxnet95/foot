@@ -1,0 +1,10 @@
+# Turn Rewrite Engine On
+RewriteEngine on
+# Rewrite for login script
+RewriteRule ^article$ read_blog.php [NC,L]
+RewriteRule ^home$ index.php [NC,L]
+RewriteRule ^about$ about_us.php [NC,L]
+RewriteRule ^fixtures$ fixtures_page.php [NC,L]
+RewriteRule ^players$ players_page.php [NC,L]
+RewriteRule ^gallery$ gallery_page.php [NC,L]
+RewriteRule ^contact$ contact_page.php [NC,L]

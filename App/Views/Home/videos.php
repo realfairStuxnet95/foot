@@ -12,7 +12,7 @@
                 </div>
                 <div class="col-md-5">
                     <div class="kick-video-wrap">
-                        <h2>Ferwafa clubs <span>ranking</span></h2>
+                        <h2>Second Division clubs <span>ranking</span></h2>
                         <div class="title-line-one"></div>
                         <div class="title-line-two"></div>
                         <div class="kick-score-scroll">
@@ -22,7 +22,7 @@
                                         <td><p>01</p></td>
                                         <td>
                                             <img src="assets/img/rank-1.png" alt="rank image" />
-                                            <p>Ac milan</p>
+                                            <p>Gasogi United</p>
                                         </td>
                                         <td><p>122</p></td>
                                     </tr>
@@ -30,7 +30,7 @@
                                         <td><p>02</p></td>
                                         <td>
                                             <img src="assets/img/rank-2.png" alt="rank image" />
-                                            <p>Fc Royal</p>
+                                            <p>Sorwathe</p>
                                         </td>
                                         <td><p>118</p></td>
                                     </tr>
@@ -38,7 +38,7 @@
                                         <td><p>03</p></td>
                                         <td>
                                             <img src="assets/img/rank-3.png" alt="rank image" />
-                                            <p>Ninja King</p>
+                                            <p>ASEC</p>
                                         </td>
                                         <td><p>110</p></td>
                                     </tr>
@@ -46,7 +46,7 @@
                                         <td><p>04</p></td>
                                         <td>
                                             <img src="assets/img/rank-4.png" alt="rank image" />
-                                            <p>Soccer club</p>
+                                            <p>Intare FC</p>
                                         </td>
                                         <td><p>98</p></td>
                                     </tr>

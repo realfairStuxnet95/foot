@@ -13,9 +13,9 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="single-match-gallery">
-                       <a href="assets/img/gallery-1.jpg" class="gallery-lightbox">
+                       <a href="assets/img/best/1.jpg" class="gallery-lightbox">
                             <div class="project-img">
-                                <img src="assets/img/gallery-1.jpg" alt="single project" />
+                                <img src="assets/img/best/1.jpg" alt="single project" />
                                 <div class="single-pro-overlay">
                                     <i class="fa fa-search-plus"></i>
                                 </div>
@@ -25,9 +25,9 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="single-match-gallery">
-                       <a href="assets/img/gallery-2.jpg" class="gallery-lightbox">
+                       <a href="assets/img/best/2.jpg" class="gallery-lightbox">
                             <div class="project-img">
-                                <img src="assets/img/gallery-2.jpg" alt="single project" />
+                                <img src="assets/img/best/2.jpg" alt="single project" />
                                 <div class="single-pro-overlay">
                                     <i class="fa fa-search-plus"></i>
                                 </div>
@@ -37,9 +37,9 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="single-match-gallery">
-                       <a href="assets/img/gallery-3.jpg" class="gallery-lightbox">
+                       <a href="assets/img/best/3.jpg" class="gallery-lightbox">
                             <div class="project-img">
-                                <img src="assets/img/gallery-3.jpg" alt="single project" />
+                                <img src="assets/img/best/3.jpg" alt="single project" />
                                 <div class="single-pro-overlay">
                                     <i class="fa fa-search-plus"></i>
                                 </div>
@@ -51,9 +51,9 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="single-match-gallery">
-                       <a href="assets/img/gallery-4.jpg" class="gallery-lightbox">
+                       <a href="assets/img/best/4.jpg" class="gallery-lightbox">
                             <div class="project-img">
-                                <img src="assets/img/gallery-4.jpg" alt="single project" />
+                                <img src="assets/img/best/4.jpg" alt="single project" />
                                 <div class="single-pro-overlay">
                                     <i class="fa fa-search-plus"></i>
                                 </div>
@@ -63,9 +63,9 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="single-match-gallery">
-                       <a href="assets/img/gallery-5.jpg" class="gallery-lightbox">
+                       <a href="assets/img/best/5.jpg" class="gallery-lightbox">
                             <div class="project-img">
-                                <img src="assets/img/gallery-5.jpg" alt="single project" />
+                                <img src="assets/img/best/5.jpg" alt="single project" />
                                 <div class="single-pro-overlay">
                                     <i class="fa fa-search-plus"></i>
                                 </div>
@@ -75,9 +75,9 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="single-match-gallery">
-                       <a href="assets/img/gallery-6.jpg" class="gallery-lightbox">
+                       <a href="assets/img/best/6.jpg" class="gallery-lightbox">
                             <div class="project-img">
-                                <img src="assets/img/gallery-6.jpg" alt="single project" />
+                                <img src="assets/img/best/6.jpg" alt="single project" />
                                 <div class="single-pro-overlay">
                                     <i class="fa fa-search-plus"></i>
                                 </div>

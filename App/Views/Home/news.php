@@ -31,11 +31,11 @@
                             ?>
                         </a>
                         <div class="single-post-text">
-                            <h3>
-                                <a href="#">
+                            <h4>
+                                <a href="article?title=<?php echo $post['title']; ?>&article=<?php echo $post['article_id']; ?>">
                                     <?php echo $post['title']; ?>
                                 </a>
-                            </h3>
+                            </h4>
                             <p class="post-date"><?php echo $function->string_date_format($post['validate_date']); ?></p>
                         </div>
                     </div>

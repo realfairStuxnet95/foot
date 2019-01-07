@@ -348,7 +348,7 @@ JS INDEX
             function initialize() {
                 var MY_MAPTYPE_ID = 'custom_style';
                 var map;
-                var brooklyn = new google.maps.LatLng(40.6743890, -73.9455);
+                var brooklyn = new google.maps.LatLng(30.062380, -1.944880);
                 var featureOpts = [
                     {
                     "featureType": "road",

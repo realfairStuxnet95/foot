@@ -42,33 +42,33 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="about">
                                     <i class="fa fa-chevron-right"></i>
                                     about us
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="players">
                                     <i class="fa fa-chevron-right"></i>
                                     team
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="fixtures">
                                     <i class="fa fa-chevron-right"></i>
-                                    terms
+                                    Fixtures
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
                                     <i class="fa fa-chevron-right"></i>
-                                    faqs
+                                    News
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="gallery">
                                     <i class="fa fa-chevron-right"></i>
-                                    privecy policy
+                                    Photo Gallery
                                 </a>
                             </li>
                         </ul>
@@ -78,36 +78,44 @@
                     <div class="single-footer-widget">
                         <h3>recent post</h3>
                         <ul class="single-footer-post">
-                            <li>
-                                <a href="#">
-                                    <div class="footer-post-img">
-                                        <img src="assets/img/footer-post.jpg" alt="footer-post" />
-                                    </div>
-                                    <div class="footer-post-text">
-                                        Lorem ipsum dolor amet, conse-ctetur adipiscing.
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="footer-post-img">
-                                        <img src="assets/img/footer-post-2.jpg" alt="footer-post" />
-                                    </div>
-                                    <div class="footer-post-text">
-                                        Lorem ipsum dolor amet, conse-ctetur adipiscing.
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="footer-post-img">
-                                        <img src="assets/img/footer-post.jpg" alt="footer-post" />
-                                    </div>
-                                    <div class="footer-post-text">
-                                        Lorem ipsum dolor amet, conse-ctetur adipiscing.
-                                    </div>
-                                </a>
-                            </li>
+                            <?php 
+                            $Posts=$article->get_featured_posts();
+                            $counter=0;
+                            foreach ($Posts as $key => $post){
+                                $Posters=$article->get_article_poster($post['article_id']);
+                                if($counter<3){
+                                ?>
+                                <li>
+                                    <a href="#">
+                                        <div class="footer-post-img">
+                                            <?php 
+                                            foreach ($Posters as $key => $poster) {
+                                                ?>
+                                            <img class="img-responsive" src="access/assets/IMG/<?php echo $poster['filename']; ?>" alt="" style="" />
+                                                <?php
+                                            }
+                                            ?>
+                                        </div>
+                                        <div class="footer-post-text">
+                                            <a href="article?title=<?php echo $post['title']; ?>&article=<?php echo $post['article_id']; ?>">
+                                                <?php
+                                                if(strlen($post['title'])>30){
+                                                    echo substr($post['title'],0,30).'....';
+                                                }else{
+                                                     echo $post['title']; 
+                                                }
+                                                ?>
+                                            </a>
+                                        </div>
+                                    </a>
+                                </li>
+                                <?php
+                            }else{
+                                break;
+                            }
+                            $counter++;
+                            }
+                            ?>
                         </ul>
                     </div>
                 </div>
