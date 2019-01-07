@@ -6,7 +6,7 @@ RewriteRule ^pricing$ pricing_table.php [NC,L]
 RewriteRule ^subscription$ register_membership.php [NC,L]
 RewriteRule ^home$ redirecting.php [NC,L]
 RewriteRule ^profile$ subscription_page.php [NC,L]
-RewriteRule ^profile$ subscription_page.php [NC,L]
 RewriteRule ^login_request$ App/Views/Login/login_member.php [NC,L]
 RewriteRule ^logoff$ App/Views/Login/log_user_out.php [NC,L]
+RewriteRule ^register_member$ App/Views/Login/register_member.php [NC,L]
 

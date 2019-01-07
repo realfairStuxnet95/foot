@@ -18,6 +18,12 @@ class User extends Execute {
 		$credentials=array("user_type"=>$user_type);
 		return $this->select_clause_order_by(Tables::users(),$credentials,'user_id',false);
 	}
+	///////////////////////////////// MEMBERS SECTION ////////////////////////////////////////////////////////////
+
+	public function get_all_members(){
+		$credentials=array("status",'DELETED');
+		return $this->select_all(Tables::members());
+	}
 }
 $user=new User();
 ?>

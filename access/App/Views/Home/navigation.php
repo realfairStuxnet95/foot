@@ -22,7 +22,7 @@ $router->loadView("Utils/auth");
             <li class="hidden-xs">
                 <a href="add_article" class="menu-item">New Article</a>
             </li>
-            <li class="dropdown hidden-xs">
+            <li class="dropdown hidden-xs" style="display: none;">
                 <a data-toggle="dropdown" class="dropdown-toggle menu-item" href="#" aria-expanded="false">English
                     <span class="caret"></span></a>
                 <ul role="menu" class="dropdown-menu">
@@ -39,7 +39,7 @@ $router->loadView("Utils/auth");
             <li>
                 <a href="#" class="right-menu-item dropdown-toggle" data-toggle="dropdown">
                     <i class="mdi mdi-bell"></i>
-                    <span class="badge up bg-success">4</span>
+                    <span class="badge up bg-success" style="display: none;">4</span>
                 </a>
 
                 <ul class="dropdown-menu dropdown-menu-right arrow-dropdown-menu arrow-menu-right dropdown-lg user-list notify-list">
@@ -88,7 +88,7 @@ $router->loadView("Utils/auth");
             <li>
                 <a href="#" class="right-menu-item dropdown-toggle" data-toggle="dropdown">
                     <i class="mdi mdi-email"></i>
-                    <span class="badge up bg-danger">8</span>
+                    <span class="badge up bg-danger" style="display: none;">8</span>
                 </a>
 
                 <ul class="dropdown-menu dropdown-menu-right arrow-dropdown-menu arrow-menu-right dropdown-lg user-list notify-list">

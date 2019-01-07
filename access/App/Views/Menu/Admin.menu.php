@@ -14,6 +14,11 @@
                     </a>
                 </li>
                 <li>
+                    <a href="?action=members" class="waves-effect">
+                        <i class="fa fa-user-plus"></i>
+                        <span> Manage Members </span></a>
+                </li>
+                <li>
                     <a href="?action=users" class="waves-effect">
                         <i class="fa fa-users"></i>
                         <span> Manage Users </span></a>

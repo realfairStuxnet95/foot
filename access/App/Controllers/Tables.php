@@ -28,5 +28,8 @@ class Tables {
 	public function publish_status(){
 		return 'PUBLISHED';
 	}
+	public function members(){
+		return 'foot_users';
+	}
 }
 ?>

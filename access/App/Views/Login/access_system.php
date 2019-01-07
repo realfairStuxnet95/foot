@@ -10,7 +10,7 @@
         <!-- App favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.ico">
         <!-- App title -->
-        <title>Login - RedBlueJD Publishing Agency</title>
+        <title>Login - Gasogi United FC</title>
 
         <!-- App css -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -25,7 +25,7 @@
     </head>
 
 
-    <body class="bg-transparent">
+    <body class="bg-transparent" style="background: url(http://themescare.com/demos/kick-view/assets/img/slider-1.jpg);">
 
         <!-- HOME -->
         <section>
@@ -39,12 +39,12 @@
                                 <div class="text-center account-logo-box">
                                     <h2 class="text-uppercase">
                                         <a href="access" class="text-success">
-                                            <span><img src="assets/images/logo.png" alt="" height="56"></span>
+                                            <span><img src="assets/images/logo.png" alt="" height="50"></span>
                                         </a>
                                     </h2>
                                     <!--<h4 class="text-uppercase font-bold m-b-0">Sign In</h4>-->
                                 </div>
-                                <div class="account-content">
+                                <div class="account-content" style="background: #fff;">
                                     <form id="frm_login" class="form-horizontal">
 
                                         <div class="form-group ">
@@ -89,7 +89,7 @@
                             </div>
                             <div class="row m-t-50">
                                 <div class="col-sm-12 text-center">
-                                    <p class="text-muted">Copyright <?php echo date('Y'); ?> All right Reserved to RedBlueJd<a href="../index" class="text-primary m-l-5"><b>Back Home</b></a></p>
+                                    <p style="color: #fff;">Copyright <?php echo date('Y'); ?> All right Reserved to Gasogi United FC<a href="../" class="text-primary m-l-5"><b>Back Home</b></a></p>
                                 </div>
                             </div>
 

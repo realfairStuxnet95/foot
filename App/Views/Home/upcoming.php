@@ -1,5 +1,3 @@
-
-
 <!-- Upcoming Matches Area Start -->
 <section class="kick-upcoming-mathces-area section_100">
     <div class="container">

@@ -5,4 +5,5 @@ require 'App/Core/Query.php';
 require 'App/Controllers/Tables.php';
 require 'App/Controllers/Executor.php';
 require 'App/Controllers/Login.php';
+require 'App/Controllers/Member.php';
 ?>

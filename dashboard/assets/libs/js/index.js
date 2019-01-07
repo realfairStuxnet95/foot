@@ -9,7 +9,13 @@ $(document).ready(function(){
                 processData:false,  
                 success:function(data)  
                 { 
-                	alert(data);        
+                	if(data.match("200")){
+                        alert("Your Account have been created successfully now you can login to view your membership information");
+                    }else if(data.match("500")){
+                        alert("Something went wrong Please contact the system Administrator for more information");
+                    }else{
+                        alert(data);
+                    }       
                 }  
            });
 	});
@@ -24,7 +30,7 @@ $(document).ready(function(){
                 success:function(data)  
                 { 
                     if(data.match("200")){
-                        window.location="index";
+                        window.location="profile";
                     }else{
                         alert(data);
                     }       

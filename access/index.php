@@ -13,9 +13,9 @@ $user_type=(int)$_SESSION['user_type'];
         <meta name="author" content="Coderthemes">
 
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="assets/images/logo.png">
         <!-- App title -->
-        <title>Welcome <?php echo $_SESSION['user_names']; ?> - RedBlueJd Publish Agency</title>
+        <title>Welcome <?php echo $_SESSION['user_names']; ?> - Gasogi United FC</title>
 
         <!--Morris Chart CSS -->
 		<link rel="stylesheet" href="../plugins/morris/morris.css">
@@ -66,6 +66,9 @@ $user_type=(int)$_SESSION['user_type'];
                     switch ($action) {
                         case 'users':
                             include 'App/Views/Admin/load_users.php';
+                            break;
+                        case 'members':
+                            include 'App/Views/Admin/load_members.php';
                             break;
                         case 'categories':
                             include 'App/Views/Admin/load_categories.php';

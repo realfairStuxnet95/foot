@@ -1,5 +1,3 @@
-
-
 <!-- Top Products Area Start -->
 <section class="kick-top-products-area section_100">
     <div class="container">

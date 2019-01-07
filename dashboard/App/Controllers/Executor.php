@@ -1,7 +1,33 @@
 <?php 
 
 class Execute extends Query{
-
+	
+	public function multi_insert($table,$array){
+		$query='';
+		if(is_array($array)){
+			$query="INSERT INTO ".$table."(";
+			$i=0;
+			foreach ($array as $key => $value) {
+				$query.=$key;
+				if($i<(count($array)-1)){
+					$query.=",";
+				}
+				$i++;
+			}
+			$query.=") VALUES(";
+			$j=0;
+			foreach ($array as $key => $value) {
+				$query.="\"$value\"";
+				if($j<(count($array)-1)){
+					$query.=",";
+				}
+				$j++;
+			}
+			$query.=")";
+		}
+		$status=$this->insert($query);
+		return $query;
+	}
 	public function select_multi_clause($table,$credentials){
 		$output=array();
 		if(is_array($credentials)){

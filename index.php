@@ -51,7 +51,6 @@ require $_SERVER['DOCUMENT_ROOT'].'/foot/access/classes_loader.php';
 </head>
 <body>
     <?php include 'App/Views/Home/header.php'; ?>  
-    
     <!-- Slider Area Start -->
     <section class="kick-slider-area">
         <div class="kick-slide">

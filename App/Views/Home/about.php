@@ -1,5 +1,4 @@
-    
-    <!-- About Area Start -->
+<!-- About Area Start -->
     <section class="kick-about-area section_100">
         <div class="container">
             <div class="row">

@@ -1,4 +1,3 @@
-
 <!-- Latest Post Area Start -->
 <section class="kick-latest-post-area section_100">
     <div class="container">

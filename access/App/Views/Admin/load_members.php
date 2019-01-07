@@ -11,13 +11,13 @@
                     <h4 class="page-title">Dashboard</h4>
                     <ol class="breadcrumb p-0 m-0">
                         <li>
-                            <a href="#">Users</a>
+                            <a href="#">Subscribed Members</a>
                         </li>
                         <li>
                             <a href="#">Available</a>
                         </li>
                         <li class="active">
-                            Users
+                            Members
                         </li>
                     </ol>
                     <div class="clearfix"></div>
@@ -34,8 +34,8 @@
 
             <div class="col-lg-12">
                 <div class="card-box">
-                    <h4 class="header-title m-t-0 m-b-30">Recent Users</h4>
-                    <button class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#myModal">ADD NEW MEMBER</button>
+                    <h4 class="header-title m-t-0 m-b-30">Recent Members</h4>
+                    <button class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#myModal" style="display: none;">ADD NEW USER</button>
                     <?php include 'add_user.php';?>
                     <?php 
                     if(isset($_GET['status']) && $_GET['status']=='success'){
@@ -43,7 +43,7 @@
                     }
                     ?>
                     <?php 
-                    $all_users=$user->get_all_users();
+                    $all_users=$user->get_all_members();
                     if(count($all_users)>0){
                     	?>
                     <div class="table-responsive">
@@ -52,9 +52,11 @@
                                 <tr>
                                     <th>#</th>
                                     <th>User Name</th>
+                                    <th>Phone</th>
                                     <th>Email</th>
                                     <th>Category</th>
                                     <th>Status</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -71,27 +73,19 @@
 	                                        <h5 class="m-0">
 	                                        	<?php echo $value['names']; ?>
 	                                        </h5>
-	                                        <p class="m-0 text-muted font-13">
-	                                        	<small>
-	                                        		<?php 
-	                                        		if($value['user_type']==1){
-	                                        			echo "Admin";
-	                                        		}elseif($value['user_type']==2){
-	                                        			echo "Chief Editor";
-	                                        		}else{
-	                                        			echo "Editor";
-	                                        		}
-	                                        		?>
-	                                        	</small>
-	                                        </p>
 	                                    </td>
+                                        <td>
+                                            <b>
+                                                <?php echo $value['phone']; ?>
+                                            </b>
+                                        </td>
 	                                    <td>
                                          <?php echo $value['email']; ?>   
                                         </td>
 	                                    <td>
                                             <?php 
-                                            if($value['user_type']==1){
-                                                echo "Admin";
+                                            if($value['type']==1 || $value['type']==0){
+                                                echo "Subscriber";
                                             }elseif($value['user_type']==2){
                                                 echo "Chief Editor";
                                             }else{
@@ -107,8 +101,39 @@
                                                 <?php echo $value['status']; ?>
                                             </span>
                                             <?php
+                                         }elseif($value['status']=='PENDING'){
+                                            ?>
+                                            <span class="badge badge-warning">
+                                                <?php echo $value['status']; ?>
+                                            </span>
+                                            <?php
                                          }
                                          ?>   
+                                        </td>
+                                        <td>
+                                            <div class="btn-group m-b-10">
+                                                <a href="#" class="btn btn-primary btn-sm waves-effect">
+                                                    <i class="fa fa-pencil"></i>
+                                                </a>
+                                                <?php 
+                                                if($value['status']=='PENDING'){
+                                                    ?>
+                                                    <a action="#" class="btn btn-warning btn-sm btn_publish" data-toggle="tooltip" data-placement="top" title data-original-title="Validate Member">
+                                                        <i class="fa fa-eye"></i>
+                                                    </a>
+                                                    <?php
+                                                }elseif($value['status']=='ACTIVE'){
+                                                    ?>
+                                                    <a action="#" class="btn btn-success btn-sm btn_publish" data-toggle="tooltip" data-placement="top" title data-original-title="Unvalidate Member">
+                                                        <i class="fa fa-eye-slash"></i>
+                                                    </a>
+                                                    <?php
+                                                }
+                                                ?>
+                                                <a action="#" class="btn btn-danger btn-sm btn_trash" data-toggle="tooltip" data-placement="top" title data-original-title="Move to Trash This Article">
+                                                    <i class="fa fa-trash"></i>
+                                                </a>
+                                            </div>
                                         </td>
 	                                </tr>
                             		<?php
