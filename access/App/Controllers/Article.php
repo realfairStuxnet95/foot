@@ -12,7 +12,9 @@ class Article extends Execute{
 	public function save_article($title,$sub_title,$body,$category_id,$author_id){
 		$today=date("Y-m-d");
 		$array=array("category_id"=>$category_id,"sub_title"=>$sub_title,"title"=>$title,"text"=>$body,"status"=>'SUBMITTED','author_id'=>$author_id,"validate_date"=>$today);
-		return $this->multi_insert(Tables::articles(),$array);
+		//return $this->multi_insert(Tables::articles(),$array);
+		$query="INSERT INTO articles(category_id,sub_title,title,text,status,author_id,validate_date) VALUES(\"$category_id\",\"$sub_title\",\"$title\",\"$body\",'SUBMITTED',\"$author_id\",\"$today\")";
+		return $this->inserting($query);
 	}
 	//function to update article
 	public function update_article($article_id,$title,$sub_title,$body){
@@ -72,6 +74,14 @@ class Article extends Execute{
 	public function save_article_comment($article_id,$name,$email,$comment){
 		$array=array("article_id"=>$article_id,"user_mail"=>$email,"user_names"=>$name,"comment"=>$comment,"status"=>"PENDING");
 		return $this->multi_insert(Tables::comments(),$array);
+	}
+	public function save_article_photos($path){
+		$array=array("image_path"=>$path,"status"=>"ACTIVE");
+		return $this->multi_insert("web_images",$array);
+	}
+	public function getPhotos($limit){
+		$sql="SELECT * FROM web_images ORDER BY id DESC LIMIT ".$limit;
+		return $this->querying($sql);
 	}
 	//search article
 	public function search_article($input){

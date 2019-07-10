@@ -15,7 +15,8 @@ $(document).ready(function(){
                         alert("Something went wrong Please contact the system Administrator for more information");
                     }else{
                         alert(data);
-                    }       
+                    } 
+                    location.reload();      
                 }  
            });
 	});

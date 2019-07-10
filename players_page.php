@@ -1,3 +1,6 @@
+<?php 
+require 'access/classes_loader.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 

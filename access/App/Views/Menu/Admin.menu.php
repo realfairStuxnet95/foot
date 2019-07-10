@@ -19,14 +19,14 @@
                         <span> Manage Members </span></a>
                 </li>
                 <li>
+                    <a href="?action=members" class="waves-effect">
+                        <i class="fa fa-futbol-o"></i>
+                        <span> Featured Next Match </span></a>
+                </li>
+                <li>
                     <a href="?action=users" class="waves-effect">
                         <i class="fa fa-users"></i>
                         <span> Manage Users </span></a>
-                </li>
-                <li>
-                    <a href="#" class="waves-effect">
-                        <i class="fa fa-users"></i>
-                        <span> Manage Articles </span></a>
                 </li>
                 <li>
                     <a href="?action=categories" class="waves-effect">

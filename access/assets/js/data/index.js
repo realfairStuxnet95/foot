@@ -24,6 +24,33 @@ $(document).ready(function(){
 			alert("Password do not match");
 		}
 	});
+	$("a.dlt_match").click(function(){
+		var match=$(this).attr("match");
+		if(confirm("Do you want to delete this match fixture??")){
+			input[0]='delete_match';
+			input[1]=match;
+			saveData(input,"dashboard?action=featured_slider");
+		}
+	});
+	$("#frm_add_match").submit(function(e){
+		e.preventDefault();
+       $.ajax({  
+            url:"save_fixture",  
+            method:"POST",  
+            data:new FormData(this),  
+            contentType:false,  
+            cache:false,  
+            processData:false,  
+            success:function(data)  
+            {
+              if(data.match("200")){
+              	location.reload();
+              }else{
+              	alert(data);
+              }
+            }  
+       });
+	});
 	$("#frm_add_category").submit(function(e){
 		e.preventDefault();
 		var Category=$("#Category").val();
@@ -77,6 +104,25 @@ $(document).ready(function(){
 		}
 		}else{
 			alert("Please select status");
+		}
+	});
+	$("a.club_points").click(function(){
+		var club=$(this).attr("club");
+		var club_name=$(this).attr("club_name");
+		var points = prompt("Please enter Points for "+club_name, "");
+	    var regex=/^[0-9]+$/;
+
+		if(points!=null){
+			if (points.match(regex)){
+				input[0]='club_standing';
+				input[1]=club;
+				input[2]=points;
+				saveData(input,"dashboard?action=club_standings");
+			}else{
+				alert("Must input numbers");
+			}
+		}else{
+			alert("Please enter club points");
 		}
 	});
 	$("a.btn_publish").click(function(){

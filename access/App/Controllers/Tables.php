@@ -13,6 +13,9 @@ class Tables {
 	public function comments(){
 		return 'articles_comments';
 	}
+	public function standings(){
+		return 'table_standings';
+	}
 	public function advert_categories(){
 		return 'advert_categories';
 	}

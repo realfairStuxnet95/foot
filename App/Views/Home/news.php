@@ -2,6 +2,15 @@
 <section class="kick-latest-post-area section_100">
     <div class="container">
         <div class="row">
+            <center>
+                <a href="http://gasogiunited.com/dashboard/subscription">
+                    <div class="row">
+                        <img src="assets/img/banners/sm-banner.gif" style="cursor: pointer;">
+                    </div>
+                </a>
+            </center>
+        </div>
+        <div class="row">
             <div class="col-md-12">
                 <div class="kick-section-heading">
                     <h2>latest <span>News & Updates</span></h2>
@@ -19,7 +28,7 @@
                 $views=$article->get_article_views($post['article_id']);
                 $comments_counter=$article->get_article_comments_counter($post['article_id']);
                 ?>
-                <div class="col-md-4">
+                <div class="col-md-4" style="max-height: 350px;overflow: hidden;margin-top: 2px;">
                     <div class="single-latest-post">
                         <a href="#">
                             <?php 
@@ -33,10 +42,16 @@
                         <div class="single-post-text">
                             <h4>
                                 <a href="article?title=<?php echo $post['title']; ?>&article=<?php echo $post['article_id']; ?>">
-                                    <?php echo $post['title']; ?>
+                                    <?php
+                                    if(strlen($post['title'])>100){
+                                        echo substr($post['title'],0,100);
+                                    }else{
+                                         echo $post['title']; 
+                                    }
+                                    ?>
                                 </a>
                             </h4>
-                            <p class="post-date"><?php echo $function->string_date_format($post['validate_date']); ?></p>
+                            <!-- <p class="post-date"><?php //echo $function->string_date_format($post['validate_date']); ?></p> -->
                         </div>
                     </div>
                 </div>

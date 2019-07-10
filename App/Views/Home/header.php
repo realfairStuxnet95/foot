@@ -24,11 +24,11 @@
                             <i class="fa fa-user"></i>
                             My Account
                         </a>
-                        <a href="dashboard/pricing">
+                        <a href="dashboard/subscription">
                             <i class="fa fa-sign-in"></i>
                             Subscription
                         </a>
-                        <a href="dashboard">
+                        <a href="dashboard/profile">
                             <i class="fa fa-user-plus"></i>
                             Manage Membership
                         </a>
@@ -46,32 +46,26 @@
                             <nav>
                                 <ul id="navigation_menu">
                                     <li class="current-page-item">
-                                        <a href="index.html">Home</a>
+                                        <a href="home">Home</a>
                                     </li>
                                     <li>
                                         <a href="about">about</a>
                                     </li>
                                     <li>
-                                        <a href="fixture.html">fixture</a>
-                                        <ul>
-                                            <li><a href="fixture.html">Fixtures</a></li><li><a href="single-fixture.html">Fixtures details</a></li>
-                                        </ul>
+                                        <a href="fixtures">fixture</a>
                                     </li>
                                     <li>
-                                        <a href="player.html">Player</a>
-                                        <ul>
-                                            <li><a href="player.html">players</a></li><li><a href="player-details.html">player details</a></li>
-                                        </ul>
+                                        <a href="players">Players</a>
                                     </li>
                                     <li>
-                                        <a href="gallery.html">gallery</a>
+                                        <a href="gallery">gallery</a>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
                         <div class="kick-site-logo">
                             <div class="responsive-menu-2"></div>
-                            <a href="index.html" class="kick-site-logo">
+                            <a href="home" class="kick-site-logo">
                                 <img src="assets/img/logo.png" alt="site logo" />
                             </a>
                             <div class="responsive-menu-1"></div>
@@ -80,32 +74,16 @@
                             <nav>
                                 <ul id="navigation_menu_2">
                                     <li>
-                                        <a href="tickets.html">all tickets</a>
-                                        <ul>
-                                            <li><a href="tickets.html">tickets</a></li>
-                                            <li><a href="buy-tickets.html">tickets details</a></li>
-                                        </ul>
+                                        <a href="#">all tickets</a>
                                     </li>
                                     <li>
-                                        <a href="shop.html">shop</a>
-                                        <ul>
-                                            <li><a href="shop.html">shop</a></li>
-                                            <li><a href="single-shop.html">single shop</a></li>
-                                            <li><a href="cart.html">cart page</a></li>
-                                            <li><a href="checkout.html">checkout page</a></li>
-                                        </ul>
+                                        <a href="#">shop</a>
                                     </li>
                                     <li>
-                                        <a href="blog-grid.html">blog</a>
-                                        <ul>
-                                            <li><a href="blog-grid.html">blog grid</a></li>
-                                            <li><a href="blog-left.html">blog left sidebar</a></li>
-                                            <li><a href="blog-right.html">blog right sidebar</a></li>
-                                            <li><a href="single-blog.html">single blog</a></li>
-                                        </ul>
+                                        <a href="#">blog</a>
                                     </li>
                                     <li>
-                                        <a href="contact.html">contact</a>
+                                        <a href="contact">contact</a>
                                     </li>
                                 </ul>
                             </nav>

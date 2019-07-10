@@ -96,6 +96,9 @@ class Execute extends Query{
 	public function querying($query){
 		return $this->select($query);
 	}
+	public function inserting($query){
+		return $this->insert($query);
+	}
 	public function select_or_clause($table,$credentials){
 		$output=array();
 		if(is_array($credentials)){

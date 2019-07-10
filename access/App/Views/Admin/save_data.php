@@ -155,6 +155,23 @@ if(isset($_POST['input'])){
 			}else{
 				echo $error;
 			}
+		}elseif($action=="club_standing"){
+			$club_id=$function->sanitize($input[1]);
+			$points=$function->sanitize($input[2]);
+			$update_status=$user->updateClubStandings($club_id,$points);
+			if($update_status){
+				echo $success;
+			}else{
+				echo $error;
+			}
+		}elseif($action=="delete_match"){
+			$match_id=$function->sanitize($input[1]);
+			$delete_status=$user->deleteMatch($match_id);
+			if($delete_status){
+				echo $success;
+			}else{
+				echo $error;
+			}
 		}
 		else{
 			echo "Specify Action Please.";

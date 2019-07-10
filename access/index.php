@@ -59,6 +59,7 @@ $user_type=(int)$_SESSION['user_type'];
             <!-- ============================================================== -->
             <!-- Start right Content here -->
             <!-- ============================================================== -->
+            <?php include 'App/Views/Modals/featured_modal.php'; ?>
             <?php 
             if($user_type==1){
                  if(isset($_GET['action'])){
@@ -80,11 +81,11 @@ $user_type=(int)$_SESSION['user_type'];
                             include 'App/Views/Admin/load_banners.php';
                             break;
                         default:
-                            include 'App/Views/Admin/dashboard.php';
+                            include 'App/Views/Admin/load_members.php';
                             break;
                     }
                  }else{
-                    include 'App/Views/Admin/dashboard.php';
+                    include 'App/Views/Admin/load_members.php';
                  }
              }elseif($user_type==2){
                 if(isset($_GET['action'])){
@@ -95,6 +96,12 @@ $user_type=(int)$_SESSION['user_type'];
                             break;
                         case 'comments':
                             include 'App/Views/Chief/articles_comments.php'; 
+                            break;
+                        case 'club_standings':
+                            include 'App/Views/Chief/club_standings.php'; 
+                            break;
+                        case 'featured_slider':
+                            include 'App/Views/Chief/featured_slider.php'; 
                             break;
                     }
                 }else{

@@ -29,6 +29,21 @@
                         <span> Articles Comments </span></a>
                 </li>
                 <li>
+                    <a href="photos" target='_blank' class="waves-effect">
+                        <i class="fa fa-image "></i>
+                        <span> Articles Photos </span></a>
+                </li>
+                <li>
+                    <a href="?action=club_standings" class="waves-effect">
+                        <i class="fa fa-soccer-ball-o"></i>
+                        <span> Clubs Standings</span></a>
+                </li>
+                <li>
+                    <a href="?action=featured_slider" class="waves-effect">
+                        <i class="fa fa-file"></i>
+                        <span> Club Featured Slider</span></a>
+                </li>
+                <li>
                     <a href="logout" class="waves-effect">
                         <i class="fa fa-sign-out"></i>
                         <span> Sign Out </span></a>

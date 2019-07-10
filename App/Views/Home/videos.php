@@ -12,76 +12,28 @@
                 </div>
                 <div class="col-md-5">
                     <div class="kick-video-wrap">
-                        <h2>Second Division clubs <span>ranking</span></h2>
+                        <h2>Second Division Group A <span>ranking</span></h2>
                         <div class="title-line-one"></div>
                         <div class="title-line-two"></div>
                         <div class="kick-score-scroll">
+                            <?php $Standings=$user->getClubsStandings(); ?>
                             <table class="table table-striped table-responsive">
                                 <tbody>
-                                    <tr>
-                                        <td><p>01</p></td>
-                                        <td>
-                                            <img src="assets/img/rank-1.png" alt="rank image" />
-                                            <p>Gasogi United</p>
-                                        </td>
-                                        <td><p>122</p></td>
-                                    </tr>
-                                    <tr>
-                                        <td><p>02</p></td>
-                                        <td>
-                                            <img src="assets/img/rank-2.png" alt="rank image" />
-                                            <p>Sorwathe</p>
-                                        </td>
-                                        <td><p>118</p></td>
-                                    </tr>
-                                    <tr>
-                                        <td><p>03</p></td>
-                                        <td>
-                                            <img src="assets/img/rank-3.png" alt="rank image" />
-                                            <p>ASEC</p>
-                                        </td>
-                                        <td><p>110</p></td>
-                                    </tr>
-                                    <tr>
-                                        <td><p>04</p></td>
-                                        <td>
-                                            <img src="assets/img/rank-4.png" alt="rank image" />
-                                            <p>Intare FC</p>
-                                        </td>
-                                        <td><p>98</p></td>
-                                    </tr>
-                                    <tr>
-                                        <td><p>05</p></td>
-                                        <td>
-                                            <img src="assets/img/rank-5.png" alt="rank image" />
-                                            <p>mohamedan</p>
-                                        </td>
-                                        <td><p>88</p></td>
-                                    </tr>
-                                    <tr>
-                                        <td><p>06</p></td>
-                                        <td>
-                                            <img src="assets/img/rank-6.png" alt="rank image" />
-                                            <p>Ac milan</p>
-                                        </td>
-                                        <td><p>82</p></td>
-                                    </tr>
-                                    <tr>
-                                        <td><p>07</p></td>
-                                        <td>
-                                            <img src="assets/img/rank-7.png" alt="rank image" />
-                                            <p>Ac milan</p>
-                                        </td>
-                                        <td><p>79</p></td>
-                                    </tr>
-                                    <tr>
-                                        <td><p>08</p></td>
-                                        <td>
-                                            <img src="assets/img/rank-8.png" alt="rank image" />
-                                            <p>Bengal club</p>
-                                        </td>
-                                        <td><p>78</p></td>
-                                    </tr>
+                                    <?php 
+                                    $counter=1;
+                                    foreach ($Standings as $key => $value) {
+                                        ?>
+                                        <tr>
+                                            <td><p><?php echo $counter; ?></p></td>
+                                            <td>
+                                                <p><?php echo $value['club_name']; ?></p>
+                                            </td>
+                                            <td><p><?php echo $value['points']; ?></p></td>
+                                        </tr>
+                                        <?php
+                                        $counter++;
+                                    }
+                                    ?>
                                 </tbody>
                             </table>
                         </div>
