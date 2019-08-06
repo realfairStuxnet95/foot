@@ -1,5 +1,5 @@
 <?php 
-require $_SERVER['DOCUMENT_ROOT'].'/foot/access/classes_loader.php';
+require $_SERVER['DOCUMENT_ROOT'].'/access/classes_loader.php';
 $request=array_merge($_GET,$_POST);
 if((isset($request['email']) && $request['email']!="") && (isset($request['password']) && $request['password']!="")){
 	//sanitize user inputs

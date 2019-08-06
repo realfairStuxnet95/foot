@@ -22,11 +22,11 @@ $user_type=(int)$_SESSION['user_type'];
                 </div>  
                 <br /><br />  
                   <?php 
-                  $photos=$article->getPhotos(10);
+                  $photos=$article->getPhotos(60);
                   foreach ($photos as $key => $value) {
                     ?>
                     <div class="col-md-3" align="center">
-                      <img src="upload/<?php echo $value['image_path']; ?>" style="width:200px;height: auto;margin:0px;">
+                      <img src="../upload/<?php echo $value['image_path']; ?>" style="width:200px;height: auto;margin:0px;">
                     </div>
                     <?php
                   }

@@ -7,10 +7,10 @@
       if(in_array($extension, $allowed_type))  
       {
       	   //EXTRACT OTHER DATA FROM FORM
-        require_once $_SERVER['DOCUMENT_ROOT'].'/foot/access/classes_loader.php';
+        require_once $_SERVER['DOCUMENT_ROOT'].'/access/classes_loader.php';
       	   $article_id=$function->sanitize($_POST['article_id']);
            $new_name = rand() . "." . $extension;  
-           $path = $_SERVER['DOCUMENT_ROOT']."/foot/access/assets/IMG/" . $new_name;
+           $path = $_SERVER['DOCUMENT_ROOT']."/access/assets/IMG/" . $new_name;
            if(move_uploaded_file($_FILES['poster']['tmp_name'], $path))  
            {  
             //save information into database.

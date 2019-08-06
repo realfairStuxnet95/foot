@@ -12,7 +12,7 @@ require __DIR__.'/classes_loader.php';
            {  
                 $new_name = rand() . '.'. $file_name[1];  
                 $sourcePath = $_FILES["images"]["tmp_name"][$name];  
-                $targetPath = "upload/".$new_name;  
+                $targetPath = "../upload/".$new_name;  
                 if(move_uploaded_file($sourcePath, $targetPath)){
                   $status=$article->save_article_photos($new_name);
                   if($status){

@@ -1,5 +1,5 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'].'/foot/access/classes_loader.php';
+require $_SERVER['DOCUMENT_ROOT'].'/access/classes_loader.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

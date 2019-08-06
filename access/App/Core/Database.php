@@ -1,5 +1,5 @@
 <?php 
-
+require "config.php";
 class Database{
 
 	//properties
@@ -11,7 +11,7 @@ class Database{
 	protected function connect(){
 		$this->server="localhost";
 		$this->user="root";
-		$this->password="";
+		$this->password=PASSWORD;
 		$this->database="foot_db";
 
 		$conn=new mysqli($this->server,$this->user,$this->password,$this->database);

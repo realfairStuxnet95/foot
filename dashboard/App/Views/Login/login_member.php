@@ -1,6 +1,6 @@
 <?php 
 if(isset($_POST['username']) && isset($_POST['password'])){
-	require $_SERVER['DOCUMENT_ROOT'].'/foot/dashboard/class_loader.php';
+	require $_SERVER['DOCUMENT_ROOT'].'/access/class_loader.php';
 	$email=$function->sanitize($_POST['username']);
 	$password=$function->sanitize($_POST['password']);
 

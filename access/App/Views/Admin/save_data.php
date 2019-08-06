@@ -1,5 +1,5 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'].'/foot/access/classes_loader.php';
+require $_SERVER['DOCUMENT_ROOT'].'/access/classes_loader.php';
 $success="200";
 $error="403";
 if(isset($_POST['input'])){
