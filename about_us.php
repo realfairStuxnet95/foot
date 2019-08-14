@@ -31,48 +31,48 @@ require 'access/classes_loader.php';
             <div class="row">
                 <div class="col-md-6">
                     <div class="about-page-welcome-right">
-                        <p>Voluptate illum dolore ita ipsum, quid deserunt singulis, labore admodum ita multos malis ea nam nam tamen fore amet. Vidisse quid incurreret ut ut possumus transferrem si ita labore dolor si appellat, aut dolore doctrina. Commodo dolor esse in magna, a multos senseri</p>
+                        <p style="line-height:30px;"><strong style='font-size:18px;'>Gasogi united</strong> is registered football club under the commercial law of Rwanda and as well a member of Rwanda football federation (Ferwafa ),this team is  based in Gasabo district Ndera sector .Gasogi united football club is now in the second division but with clear ambitions of going to first division.</p>
+                        <p style="margin:10px;"><h3>OUR OBJECTIVES</h3></p>
+                        <ul style="line-height:25px;">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-check"></i>
+                                    To widen the promotion of our young footballers to the international football arena.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-check"></i>
+                                    To promote football to the private sector as a profitable business to be invested in.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-check"></i>
+                                    To create self- confidence among Rwandan young footballers.
+                                </a>
+                            </li>
+                        </ul>
                         <ul>
                             <li>
                                 <a href="#">
                                     <i class="fa fa-check"></i>
-                                    excellent surface 
+                                     To facilitate government in its football developmental programs.
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
                                     <i class="fa fa-check"></i>
-                                    excellent commentary
+                                    To educate Rwandan more especially the young about football business.
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
                                     <i class="fa fa-check"></i>
-                                    Refreshments are available
+                                    To Entertain Rwandans.
                                 </a>
                             </li>
                         </ul>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-check"></i>
-                                     surface complimented
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-check"></i>
-                                    excellent complimented
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-check"></i>
-                                    excellent surface complimented
-                                </a>
-                            </li>
-                        </ul>
-                        <p>Voluptate illum dolore ita ipsum, quid deserunt singulis, labore admodum ita multos malis ea nam nam tamen fore amet. Vidisse quid incurreret ut ut possumus transferrem si ita labore dolor si appellat,</p>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -101,8 +101,11 @@ require 'access/classes_loader.php';
             <div class="row">
                 <div class="col-md-12">
                     <div class="something-text">
-                        <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum. Etiam vel orci ipsum. Sed eget velit ipsum. Duis in tortor scelerisque felis .Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum. Etiam vel orci ipsum. Sed eget velit ipsum. Duis in tortor scelerisque felis.Etiam vel orci ipsum. Sed eget velit ipsum. Duis in tortor scelerisque felis .Ut pretium nisl non justo condimentum. </p>
-                        <p>Voluptate illum dolore ita ipsum, quid deserunt singulis, labore admodum ita multos malis ea nam nam tamen fore amet. Vidisse quid incurreret ut ut possumus transferrem si ita labore dolor si appellat, aut dolore doctrina. Commodo dolor  labore dolor si appellat, aut dolore doctrina. Commodo dolor esse in magna, a a multos senserit nam si aliqua iis multos.</p>
+                        <p style="line-height:30px;">
+We strongly believe that Gasogi united is the leading  football team simply because being the sole team owned by individual  it gives it a better chance of being organized hence attracting many fans and supporters .
+GASOGI UNITED FOOTBALL CLUB is totally aiming at bring about the change in Rwandan football ,this will be  done through  recruiting young football talents  from all over the country who are well disciplined . 
+
+                        </p>
                     </div>
                 </div>
             </div>
@@ -117,13 +120,22 @@ require 'access/classes_loader.php';
             <div class="row">
                 <div class="col-md-12">
                     <div class="kick-section-heading">
-                        <h2>club <span>history</span></h2>
+                        <h2>Our <span>Mission</span></h2>
                         <div class="title-line-one"></div>
                         <div class="title-line-two"></div>
                     </div>
                 </div>
             </div>
             <div class="row">
+                <div class="col-md-12">
+                    <div class="something-text">
+                        <p style="line-height:20px;">
+<em><q style="font-weight:bold;font-size:18px;">Our mission is to address basic football concerns like:  Fair talent detection, provision of required materials for training, professional trainers, promotion and marketing of players … </q></em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="display:none;">
                 <div class="col-md-12">
                     <div class="tabs club-history-tab" data-example-id="togglable-tabs">
                         <div class="row">
