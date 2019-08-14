@@ -24,9 +24,12 @@ if(isset($_GET['article']) && isset($_GET['title'])){
         $article_views+=1;
         $comments_counter=$article->get_article_comments_counter($article_id);
         $update_views=$article->update_article_views($article_id,$article_views);
+        $Posters=$article->get_article_poster($article_id);
         if(!$update_views){
             backHome();
         }
+        $url =  "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
+        $escaped_url = htmlspecialchars( $url, ENT_QUOTES, 'UTF-8' );
     }
 }else{
     backHome();
@@ -43,6 +46,22 @@ function backHome(){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="<?php echo $title; ?>">
+    <meta name="author" content="<?php echo $title; ?>">
+    <meta name="description" content="<?php echo $title; ?>">
+    <meta property="og:title" content="<?php echo $title; ?>" />
+    <meta property="og:url" content="<?php echo $escaped_url;?>" />
+    <meta property="og:description" content="<?php echo $title; ?>">
+    <?php
+    foreach($Posters as $key =>$value){
+        ?>
+        <meta property="og:image" content="http://gasogiunited.com/access/assets/IMG/<?php echo $value['filename']; ?>">
+        <?php
+    }
+    ?>
+    <meta property="og:type" content="article" />
+    
+    <meta name="twitter:card" content="<?php echo $title; ?>"></meta>
     <title><?php echo $title; ?> || Gasogi United FC</title>
     <?php include 'App/Views/Utils/stylesheets.php'; ?>
 </head>
@@ -54,6 +73,13 @@ function backHome(){
     <!-- Blog Page Area Start -->
     <section class="kick-blog-page-area section_100">
         <div class="container">
+            <div class="row" style="margin-top:10vh;margin-bottom:5vh;">
+                <div class="col-lg-12">
+                    <a href="http://gasogiunited.com/dashboard/subscription">
+                        <img src="assets/img/banners/sm-banner.gif" style="cursor: pointer;">
+                    </a>
+                </div> 
+            </div>
             <div class="row">
                 <div class="col-md-8">
                     <div class="single-blog-page-section">
@@ -144,7 +170,7 @@ function backHome(){
                                 </button>
                             </form>
                         </div>
-                        <?php include 'App/Views/Blog/standing_table.php'; ?>
+                        <?php //include 'App/Views/Blog/standing_table.php'; ?>
                         <div class="single-fixture-right-widget">
                             <h3>best moment</h3>
                             <div class="moment-slider">
@@ -163,6 +189,7 @@ function backHome(){
     </section>
     <!-- Blog Page Area End -->
     <?php include 'App/Views/Home/footer.php'; ?>
-    <?php include 'App/Views/Utils/scripts.php'; ?>    
+    <?php include 'App/Views/Utils/scripts.php'; ?> 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ca20bd5ae2844a2"></script>
 </body>
 </html>

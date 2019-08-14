@@ -1,6 +1,6 @@
 <?php 
 if (isset($_POST['fname']) && isset($_POST['lname']) && isset($_POST['phone'])) {
-	require $_SERVER['DOCUMENT_ROOT'].'/foot/dashboard/class_loader.php';
+	require $_SERVER['DOCUMENT_ROOT'].'/dashboard/class_loader.php';
 	$fname=$function->sanitize($_POST['fname']);
 	$lname=$function->sanitize($_POST['fname']);
 	$phone=$function->sanitize($_POST['phone']);
