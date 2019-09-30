@@ -14,7 +14,7 @@ require $_SERVER['DOCUMENT_ROOT'].'/access/classes_loader.php';
 </head>
 <body>
     <?php include 'App/Views/Home/header.php'; ?>  
-    <?php include 'App/Views/Home/slider.php'; ?>
+    <?php //include 'App/Views/Home/slider.php'; ?>
     <?php include 'App/Views/Home/news.php'; ?>
     <?php include 'App/Views/Home/videos.php'; ?>
     <?php //include 'App/Views/Home/about.php'; ?>
