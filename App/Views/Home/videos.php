@@ -12,7 +12,7 @@
                 </div>
                 <div class="col-md-5">
                     <div class="kick-video-wrap">
-                        <h2>Second Division Group A <span>ranking</span></h2>
+                        <h2>First Division <span>ranking</span></h2>
                         <div class="title-line-one"></div>
                         <div class="title-line-two"></div>
                         <div class="kick-score-scroll">

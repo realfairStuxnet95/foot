@@ -83,7 +83,7 @@
                                         <a href="#">blog</a>
                                     </li>
                                     <li>
-                                        <a href="contact">contact</a>
+                                        <a href="#">contact</a>
                                     </li>
                                 </ul>
                             </nav>
