@@ -1,9 +1,0 @@
-===========TODO TASKS ====================
-
-3.Design Admin Dashboard summarization page.
-5.Design Menu for Editor
-6.Show Editor Articles SUbmitted or Created By Him/Her.
-7.Users Profile Page Design and Personal Information Changing (N.B: list articles writter by this author. Best Idea it to design Profile Page in Tabs For Personal Info,SOcial Media Links,Articles).
-9.Clean all unnecessary Information.
-10.Add Multiple Article Document SUch as Image,PDf,World,etc.
-

@@ -52,10 +52,10 @@
                                         <a href="about">about</a>
                                     </li>
                                     <li>
-                                        <a href="fixtures">fixture</a>
+                                        <a href="#">fixture</a>
                                     </li>
                                     <li>
-                                        <a href="players">Players</a>
+                                        <a href="#">Players</a>
                                     </li>
                                     <li>
                                         <a href="gallery">gallery</a>

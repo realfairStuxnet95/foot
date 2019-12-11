@@ -1,9 +1,8 @@
 <?php 
-if(isset($_GET['article']) && isset($_GET['title'])){
-    require 'access/classes_loader.php';
-    $article_id=(int)$function->sanitize($_GET['article']);
-    $title=$function->sanitize($_GET['title']);
-    //check article
+require 'const.php';
+if(isset($_GET['article'])){
+    require ROOT_URL.'classes_loader.php';
+    $article_id=(int)$function->sanitize($_GET['article']);    //check article
     $category_id=0;
     //check if article_id is valid
     $check_status=$article->check_article_id($article_id);
@@ -12,6 +11,7 @@ if(isset($_GET['article']) && isset($_GET['title'])){
     }else{
         //get article information
         $article_info=$article->get_article($article_id);
+        $title=$function->extract_array($article_info,"title");
         $article_category="";
         $author_name="";
         foreach ($article_info as $key => $post) {
@@ -55,7 +55,7 @@ function backHome(){
     <?php
     foreach($Posters as $key =>$value){
         ?>
-        <meta property="og:image" content="http://gasogiunited.com/access/assets/IMG/<?php echo $value['filename']; ?>">
+        <meta property="og:image" content="https://gasogiunited.com/access/assets/IMG/<?php echo $value['filename']; ?>">
         <?php
     }
     ?>
@@ -92,7 +92,7 @@ function backHome(){
                             <?php 
                             foreach ($Posters as $key => $poster) {
                                 ?>
-                            <img class="img-responsive" src="access/assets/IMG/<?php echo $poster['filename']; ?>" alt="" />
+                            <img class="img-responsive" src="../access/assets/IMG/<?php echo $poster['filename']; ?>" alt="" />
                                 <?php
                             }
                             ?>
@@ -107,7 +107,7 @@ function backHome(){
                                 <div class="col-sm-7">
                                     <div class="admin-image-right">
                                         <ul>
-                                            <li>
+                                            <li style="display: none;">
                                                 <a href="#">
                                                     <i class="fa fa-eye"></i>
                                                 <?php echo $article_views; ?>
@@ -169,6 +169,45 @@ function backHome(){
                                     <i class="fa fa-search"></i>
                                 </button>
                             </form>
+                        </div>
+                        <div class="single-fixture-right-widget">
+                            <h3>Related News</h3>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <?php 
+                                    $Related=$article->getRelatedArticles($article_id);
+                                    foreach ($Related as $key => $value) {
+                                        $Posters=$article->get_article_poster($value['article_id']);
+                                        ?>
+                                        <div class="row" style="margin-bottom: 5px;">
+                                            <div class="col-md-4">
+                                                <?php 
+                                                foreach ($Posters as $key => $poster) {
+                                                    ?>
+                                                <img class="img-responsive" src="../access/assets/IMG/<?php echo $poster['filename']; ?>" alt="" style="" />
+                                                    <?php
+                                                }
+                                                ?>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h5 style="font-weight: bold;">
+                                                    <a href="article?article=<?php echo $post['article_id']; ?>">
+                                                        <?php
+                                                        if(strlen($value['title'])>100){
+                                                            echo substr($post['title'],0,100);
+                                                        }else{
+                                                             echo $value['title']; 
+                                                        }
+                                                        ?>
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <?php
+                                    }
+                                    ?>
+                                </div>
+                            </div>
                         </div>
                         <?php //include 'App/Views/Blog/standing_table.php'; ?>
                         <div class="single-fixture-right-widget">

@@ -12,7 +12,7 @@
                         <ul class="single-footer-address">
                             <li>
                                 <div class="add-icon">
-                                    <i class="fa fa-map-marker"></i>
+                                    <i class="fa fa-user"></i>
                                 </div>
                                 <p> KAKOZA NKURIZA CHARLES (KNC)</p>
                             </li>
@@ -48,13 +48,13 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="players">
+                                <a href="#">
                                     <i class="fa fa-chevron-right"></i>
                                     team
                                 </a>
                             </li>
                             <li>
-                                <a href="fixtures">
+                                <a href="#">
                                     <i class="fa fa-chevron-right"></i>
                                     Fixtures
                                 </a>
