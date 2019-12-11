@@ -66,7 +66,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="gallery">
+                                <a href="#">
                                     <i class="fa fa-chevron-right"></i>
                                     Photo Gallery
                                 </a>
@@ -134,10 +134,10 @@
                                 <a href="#" class="fb"><i class="fa fa-facebook"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="twit"><i class="fa fa-twitter"></i></a>
+                                <a href="https://twitter.com/gasogiunited?lang=en" class="twit" target="_blank"><i class="fa fa-twitter"></i></a>
                             </li>
                             <li>
-                               <a href="#" class="skype"><i class="fa fa-instagram"></i></a>
+                               <a href="https://www.instagram.com/gasogiunited/" class="skype" target="_blank"><i class="fa fa-instagram"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -152,7 +152,9 @@
                     <div class="copyright">
                         <p class="desktop">
                             Copyright &copy; <?php echo date('Y'); ?> <a href="#">Gasogi United</a>
-                            . Made with <i class="fa fa-heart"></i> from <span>TV1 Rwanda</span> 
+                            . Made with <i class="fa fa-heart"></i> from <span>
+                                <a href="https://radiotv1.rw/">TV1 Rwanda</a>
+                            </span> 
                         </p>
                         <p class="mobile">
                             Copyright &copy; <?php echo date('Y'); ?> <a href="#">Gasogi United</a>

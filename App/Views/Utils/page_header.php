@@ -58,7 +58,7 @@
                                         <a href="#">Players</a>
                                     </li>
                                     <li>
-                                        <a href="gallery">gallery</a>
+                                        <a href="#">gallery</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -83,7 +83,7 @@
                                         <a href="#">blog</a>
                                     </li>
                                     <li>
-                                        <a href="contact">contact</a>
+                                        <a href="#">contact</a>
                                     </li>
                                 </ul>
                             </nav>
