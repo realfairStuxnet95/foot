@@ -1,6 +1,11 @@
 <?php 
 
 class Article extends Execute{
+
+	public function getRelatedArticles($article_id){
+		$sql="SELECT * FROM articles WHERE article_id!=\"$article_id\" ORDER BY article_id DESC LIMIT 10";
+		return $this->querying($sql);
+	}
 	public function get_articles_categories(){
 		return $this->select_all_order_by(Tables::articles_categories(),"name",true);
 	}
@@ -185,7 +190,7 @@ class Article extends Execute{
 	############################# PUBLIC WEBSITE SECTION ####################################
 	public function get_featured_posts(){
 		$credentials=array("status"=>Tables::publish_status());
-		return $this->select_order_limit(Tables::articles(),$credentials,'article_id',6,false);
+		return $this->select_order_limit(Tables::articles(),$credentials,'article_id',15,false);
 	}
 	//get article author
 	public function get_article_author($author_id){
