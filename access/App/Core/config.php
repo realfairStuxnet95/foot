@@ -1,3 +1,3 @@
 <?php 
-define("PASSWORD","DATABASEserver#@!098");
+define("PASSWORD","2016!Mob@Me!");
 ?>

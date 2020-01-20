@@ -8,7 +8,7 @@ if(isset($_GET['article']) && isset($_GET['title'])){
     //check if article_id is valid
     $check_status=$article->check_article_id($article_id);
     if(!$check_status){
-        backHome();
+        //backHome();
     }else{
         //get article information
         $article_info=$article->get_article($article_id);
