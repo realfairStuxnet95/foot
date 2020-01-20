@@ -190,7 +190,7 @@ class Article extends Execute{
 	############################# PUBLIC WEBSITE SECTION ####################################
 	public function get_featured_posts(){
 		$credentials=array("status"=>Tables::publish_status());
-		return $this->select_order_limit(Tables::articles(),$credentials,'article_id',15,false);
+		return $this->select_order_limit(Tables::articles(),$credentials,'article_id',10,false);
 	}
 	//get article author
 	public function get_article_author($author_id){
