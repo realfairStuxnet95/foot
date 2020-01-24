@@ -107,12 +107,12 @@ function backHome(){
                                 <div class="col-sm-7">
                                     <div class="admin-image-right">
                                         <ul>
-                                            <li>
+<!--                                             <li>
                                                 <a href="#">
                                                     <i class="fa fa-eye"></i>
                                                 <?php echo $article_views; ?>
                                                 </a>
-                                            </li>
+                                            </li> -->
                                             <li style="display: none;">
                                                 <a href="#">
                                                     <i class="fa fa-heart-o"></i>
